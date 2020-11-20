@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../assets/images/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 10px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #a1dde7;
+}

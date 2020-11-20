@@ -1,0 +1,117 @@
+h1 {
+  color: #fff;
+  margin: 10px auto;
+  font-weight: 100;
+}
+
+.calc__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+
+  min-width: 50vw;
+  margin: 20px auto;
+  padding: 10px;
+
+  background-color: #fff;
+  box-shadow: 0px 0px 25px 0px #000000;
+}
+
+.operation__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  width: 100%;
+  height: 80px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.reset_btn {
+  grid-area: reset;
+}
+.clear__btn {
+  grid-area: clear;
+}
+.signs__btn-percent {
+  grid-area: percent;
+}
+.signs__btn-divine {
+  grid-area: divine;
+  background-color: #20b2ac;
+  border: none;
+}
+
+.number__btn-7 {
+  grid-area: number7;
+}
+.number__btn-8 {
+  grid-area: number8;
+}
+.number__btn-9 {
+  grid-area: number9;
+}
+.signs__btn-multiply {
+  grid-area: multiply;
+  background-color: #fea502;
+  border: none;
+}
+
+.number__btn-4 {
+  grid-area: number4;
+}
+.number__btn-5 {
+  grid-area: number5;
+}
+.number__btn-6 {
+  grid-area: number6;
+}
+.signs__btn-minus {
+  grid-area: minus;
+  background-color: #f18080;
+  border: none;
+}
+
+.number__btn-1 {
+  grid-area: number1;
+}
+.number__btn-2 {
+  grid-area: number2;
+}
+.number__btn-3 {
+  grid-area: number3;
+}
+.signs__btn-add {
+  grid-area: plus;
+  background-color: #7d92e1;
+  border: none;
+}
+
+.number__btn-0 {
+  grid-area: number0;
+}
+.signs__btn-dot {
+  grid-area: dot;
+}
+.signs__btn-equals {
+  grid-area: equals;
+  background-color: #9477af;
+  border: none;
+}
+
+.calculator__wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  gap: 5px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "reset clear percent divine"
+    "number7 number8 number9 multiply"
+    "number4 number5 number6 minus"
+    "number1 number2 number3 plus"
+    "dot number0 equals equals";
+}
